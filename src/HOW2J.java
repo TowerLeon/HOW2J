@@ -189,28 +189,95 @@ class IgnoreDigits{
         }
     }
 }
+
+
 //控制流程-练习-百万富翁
 class Cal{
     double result;
-    double Cal(int p,double r,int n){
-        double rsingle = 1;
-        double rsum = 0;
+    double rsingle;
+    double result2;
+    void setCal(int p,double r,int n){
+        rsingle = 1;
+        result = 0;
         for (int i = 1; i <= n; i++) {
             rsingle *= (1 + r);
-            rsum += rsingle;
+            result += rsingle;
         }
-        return result;
+        result2 = result * p;
+//    double getCal(){
+//            return result;
+//        }
+
     }
 }
 class Millonare{
     public static void main(String[] args) {
         Cal m = new Cal();
         int year = 1;
-        double result = m.Cal(12000,0.2,1);
-        while (result < 1000000){
+        double ceiling = 1000000;
+        m.setCal(12000,0.2,1);
+        double temp = m.result2;
+        while (temp < ceiling){
             year ++;
-            result = m.Cal(12000,0.2,year);
+            m.setCal(12000,02,year);
+            temp = m.result2;
         }
-        System.out.printf("完成百万富翁的年度是" + year);
+        System.out.println("完成百万富翁的年度是" + year);
     }
 }
+
+//控制流程-练习-黄金分割点
+class Div {
+    int[] a; //numerator or denominator
+    int n; //index
+    double[][] b; //result array
+    double[][] c; //minus result array
+    final double GOLD = 0.618;
+
+    void setDiv(int n) {
+        this.n = n;
+        for (int i = 0; i < n; i++) {
+            a[i] = i + 1;
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                b[i][j] = a[i] / a[j];
+                c[i][j] = b[i][j] - GOLD;
+                c[i][j] = Math.abs(c[i][j]);
+            }
+        }
+    }
+
+    double getMin(int n) {
+        this.n = n;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1; j++) {
+                if (c[i][j] > c[i][j + 1]) {
+                    double temp = c[i][j];
+                    c[i][j] = c[i][j + 1];
+                    c[i][j + 1] = temp;
+                }
+            }
+        }
+        for (int i = 0; i < n - 1; i++) {
+            if (c[i][0] > c[i + 1][0]) {
+                double temp = c[i][0];
+                c[i][0] = c[i + 1][0];
+                c[i + 1][0] = temp;
+            }
+        }
+        return c[0][0];
+    }
+}
+class FindGold{
+    public static void main(String[] args) {
+        Div ob = new Div();
+        int[] a = new int[];
+        ob.setDiv(20);
+        double result = ob.getMin(20);
+        System.out.println("最小值是" + result);
+    }
+}
+
+
+
