@@ -191,7 +191,7 @@ class IgnoreDigits{
 }
 
 
-//控制流程-练习-百万富翁
+//控制流程-练习-百万富翁,fail to work
 class Cal{
     double result;
     double rsingle;
@@ -227,15 +227,50 @@ class Millonare{
 }
 
 //控制流程-练习-黄金分割点
-class Div {
-    int[] a; //numerator or denominator
-    int n; //index
-    double[][] b; //result array
-    double[][] c; //minus result array
-    final double GOLD = 0.618;
+//class Div {
+//    int[] a; //numerator or denominator
+//    int n; //index
+//    double[][] c;
 
-    void setDiv(int n) {
-        this.n = n;
+//    void setDiv(int n) {
+//        this.n = n;
+//
+//
+//        }
+//    }
+//
+//    double getMin(int n) {
+//        this.n = n;
+//        for (int i = 0; i < n - 1; i++) {
+//            for (int j = 0; j < n - 1; j++) {
+//                if (c[i][j] > c[i][j + 1]) {
+//                    double temp = c[i][j];
+//                    c[i][j] = c[i][j + 1];
+//                    c[i][j + 1] = temp;
+//                }
+//            }
+//        }
+//        for (int i = 0; i < n - 1; i++) {
+//            if (c[i][0] > c[i + 1][0]) {
+//                double temp = c[i][0];
+//                c[i][0] = c[i + 1][0];
+//                c[i + 1][0] = temp;
+//            }
+//        }
+//        return c[0][0];
+//    }
+//}
+class FindGold {
+    public static void main(String[] args) {
+        int n = 20;
+        int[] a = new int[n];
+        double[][] b = new double[n][n]; //result array
+        double[][] c = new double[n][n]; //minus result array
+        final double GOLD = 0.618;
+
+
+//        Div ob = new Div();
+
         for (int i = 0; i < n; i++) {
             a[i] = i + 1;
         }
@@ -245,11 +280,8 @@ class Div {
                 c[i][j] = b[i][j] - GOLD;
                 c[i][j] = Math.abs(c[i][j]);
             }
-        }
-    }
 
-    double getMin(int n) {
-        this.n = n;
+        }
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - 1; j++) {
                 if (c[i][j] > c[i][j + 1]) {
@@ -265,19 +297,26 @@ class Div {
                 c[i][0] = c[i + 1][0];
                 c[i + 1][0] = temp;
             }
+            //        ob.setDiv(20);
+//        double result = ob.getMin(n);
         }
-        return c[0][0];
-    }
-}
-class FindGold{
-    public static void main(String[] args) {
-        Div ob = new Div();
-        int[] a = new int[];
-        ob.setDiv(20);
-        double result = ob.getMin(20);
-        System.out.println("最小值是" + result);
+        System.out.println("最小值是" + c[0][0]);
     }
 }
 
+//控制流程-练习-水仙花数
+class Flower{
+    public static void main(String[] args) {
+        int range = 900;
+        String[] a = new String[range];
+        for (int i = 0; i < a.length; i++) {
+            Integer.parseInt(a[i]) = 100 + i;
+        }
+        for (int i = 0; i < a.length; i++) {
+            if ()a[i];
+
+        }
+    }
+}
 
 
