@@ -176,11 +176,41 @@ class Income{
     }
 
 //控制流程-练习-忽略倍数
-class PrintDigits{
+class IgnoreDigits{
     public static void main(String[] args) {
         int n = 100;
         for (int i = 1; i <= n; i++) {
-i
+            if (i % 3 == 0 | i % 5 == 0) {
+
+            } else {
+                System.out.printf(i + "\n" );
+            }
+
         }
+    }
+}
+//控制流程-练习-百万富翁
+class Cal{
+    double result;
+    double Cal(int p,double r,int n){
+        double rsingle = 1;
+        double rsum = 0;
+        for (int i = 1; i <= n; i++) {
+            rsingle *= (1 + r);
+            rsum += rsingle;
+        }
+        return result;
+    }
+}
+class Millonare{
+    public static void main(String[] args) {
+        Cal m = new Cal();
+        int year = 1;
+        double result = m.Cal(12000,0.2,1);
+        while (result < 1000000){
+            year ++;
+            result = m.Cal(12000,0.2,year);
+        }
+        System.out.printf("完成百万富翁的年度是" + year);
     }
 }
