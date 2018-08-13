@@ -304,19 +304,48 @@ class FindGold {
     }
 }
 
-//控制流程-练习-水仙花数
-class Flower{
-    public static void main(String[] args) {
-        int range = 900;
-        String[] a = new String[range];
-        for (int i = 0; i < a.length; i++) {
-            Integer.parseInt(a[i]) = 100 + i;
-        }
-        for (int i = 0; i < a.length; i++) {
-            if ()a[i];
+//控制流程-练习-水仙花数 ,fail to work
+//class Flower{
+//    public static void main(String[] args) {
+//        Flower ob = new Flower();
+//        int range = 900;
+//        int[] a = new int[range];
+//        String[] b = new String[range];
+//        for (int i = 0; i < a.length; i++) {
+//            a[i] = 100 + i;
+//            b[i] = Integer.toString(a[i]);
+//       }
+//        for (int i = 0; i < a.length; i++) {
+//            if ( ob.cal(i) == a[i] );
+//
+//        }
+//    }
+//    public int cal(int i){
+//        int result;
+//        result = Math.pow(Integer.parseInt(Integer.toString(i).substring(0,1)),2) + Math.pow(Integer.parseInt(Integer.toString(i).substring(1,2)),2) + Math.pow(Integer.parseInt(Integer.toString(i).substring(2,3)),2)
+//        return result;
+//    }
+//
+//}
 
+//控制流程-练习-小学算术题，略
+
+//数组-练习-数组最小值
+class FindMin{
+    public static void main(String[] args) {
+        int[] a = new int[5];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = (int) (Math.random() * 100);
+            System.out.println("The array is " + a[i]);
         }
+
+        int min = a[0];
+        for (int i = 0; i < a.length; i++) {
+            if (min >= a[i]){
+                min = a[i];
+            }
+        }
+        System.out.println("The minimum number is " + min);
     }
 }
-
 
