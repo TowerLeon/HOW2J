@@ -10,6 +10,8 @@
  */
 
 import org.omg.CORBA.COMM_FAILURE;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -349,3 +351,22 @@ class FindMin{
     }
 }
 
+//数组-练习-数组反转
+class ReverseArray{
+    public static void main(String[] args) {
+        int[] a = new int[5];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = (int) (Math.random() * 100);
+            System.out.println("The original array is : " + a[i]);
+        }
+        for (int i = 0; i < a.length / 2; i++) {
+            int temp = a[i];
+            a[i] = a[a.length - 1 - i];
+            a[a.length - 1 - i] = temp;
+        }
+        System.out.println("The reversed array is : " + Arrays.toString(a));
+
+    }
+}
+
+//数组-练习-排序
