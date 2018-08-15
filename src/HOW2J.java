@@ -12,6 +12,7 @@
 import com.sun.javafx.runtime.async.AbstractRemoteResource;
 import org.omg.CORBA.COMM_FAILURE;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -411,7 +412,7 @@ class SortBubble{
     }
 }
 
-//数组-练习--最大值
+//数组-练习-最大值
 class Biggest{
     public static void main(String[] args) {
         int[] a = new int[5];
@@ -424,5 +425,71 @@ class Biggest{
             max = max > x ? max : x;
         }
         System.out.printf("The biggest number is " + max);
+    }
+}
+
+//数组-练习-合并数组
+class CombineArray{
+    public static void main(String[] args) {
+        int ran1 = (int) (Math.random() * 6) + 5;
+        int ran2 = (int) (Math.random() * 6) + 5;
+        int[] a = new int[ran1];
+        int[] b = new int[ran2];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = (int) (Math.random() * 100);
+        }
+        for (int i = 0; i < b.length; i++) {
+            b[i] = (int) (Math.random() * 100);
+        }
+        System.out.println("The ran1 array is " + Arrays.toString(a));
+        System.out.println("The ran2 array is " + Arrays.toString(b));
+        int[] c = new int[ran1 + ran2];
+        System.arraycopy(a,0,c,0,ran1);
+        System.arraycopy(b,0,c,ran1,ran2);
+        System.out.println("The combined array is " + Arrays.toString(c));
+    }
+}
+
+//数组-练习-二维数组
+class TwoDimensionalArray{
+    public static void main(String[] args) {
+        int[][] a = new int[5][5];
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                a[i][j] = (int) (Math.random() * 100);
+            }
+        }
+        int max = a[0][0];
+        int x = 0;
+        int y = 0;
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                if (max < a[i][j]){
+                    max = a[i][j];
+                    x = i;
+                    y = j;
+                }
+            }
+        }
+        System.out.println("The max value is " + max);
+        System.out.println("The coordinate is " + x + y);
+    }
+}
+
+//数组-练习-二维数组排序
+class TwoDimensionalArraySort{
+    public static void main(String[] args) {
+        //a[][] 初始化
+        int[][] a = new int[5][8];
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                a[i][j] = (int) (Math.random() * 100);
+            }
+        }
+        //to one-dimensional array
+        int[][] b = new int[40];
+        for (int i = 0; i < a.length; i++) {
+            System.arraycopy(a,0,b,0,a[0].length);
+        }
     }
 }
