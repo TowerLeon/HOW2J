@@ -484,12 +484,51 @@ class TwoDimensionalArraySort{
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[0].length; j++) {
                 a[i][j] = (int) (Math.random() * 100);
+                System.out.print(a[i][j] + "\t");
             }
+            System.out.println();
         }
+        System.out.println();
         //to one-dimensional array
-        int[][] b = new int[40];
+        int[] b = new int[40];
         for (int i = 0; i < a.length; i++) {
-            System.arraycopy(a,0,b,0,a[0].length);
+            System.arraycopy(a[i],0,b,0 + i * 8,a[i].length);
         }
+        System.out.println("The b array is " + Arrays.toString(b));
+        //sort
+        Arrays.sort(b);
+        System.out.println("The sorted b array is " + Arrays.toString(b));
+        System.out.println("The sorted a array is :");
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                a[i][j] = b[i * a[0].length + j];
+                System.out.print(a[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+//数组-练习-护甲
+class ItemOne {
+    String name;
+    int price;
+}
+class Armor extends ItemOne{
+    int ac;
+}
+class HuJia{
+    public static void main(String[] args) {
+        Armor ob1 = new Armor();
+        Armor ob2 = new Armor();
+        ob1.name = "布甲";
+        ob1.price = 300;
+        ob1.ac = 15;
+        ob2.name = "锁子甲";
+        ob2.price = 500;
+        ob2.ac = 40;
+        System.out.print("名称: "+ob1.name+" "+ "价格： "+ob1.price+" "+ "护甲等级： "+ob1.ac);
+        System.out.print("\n名称: "+ob2.name+" "+ "价格： "+ob2.price+" "+ "护甲等级： "+ob2.ac);
     }
 }
