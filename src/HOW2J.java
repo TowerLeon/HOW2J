@@ -418,10 +418,11 @@ class Biggest{
         for (int i = 0; i < a.length; i++) {
         a[i] = (int) (Math.random() * 100);
         }
+        int max = a[0];
         System.out.println("The original array is " + Arrays.toString(a));
-        for (int :
-             ) {
-            
+        for (int x : a) {
+            max = max > x ? max : x;
         }
+        System.out.printf("The biggest number is " + max);
     }
 }
