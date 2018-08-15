@@ -9,6 +9,7 @@
  * 作者姓名           修改时间           版本号              描述
  */
 
+import com.sun.javafx.runtime.async.AbstractRemoteResource;
 import org.omg.CORBA.COMM_FAILURE;
 
 import java.util.Arrays;
@@ -370,3 +371,57 @@ class ReverseArray{
 }
 
 //数组-练习-排序
+class SortSelect{
+    public static void main(String[] args) {
+        int[] a = new int[5];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = (int) (Math.random() * 100);
+        }
+        System.out.println("The original array is " + Arrays.toString(a));
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i; j < a.length; j++) {
+                if (a[i] > a[j]) {
+                    int temp = a[j];
+                    a[j] = a[i];
+                    a[i] = temp;
+                }
+            }
+        }
+        System.out.println("The sorted array is " + Arrays.toString(a));
+    }
+}
+
+class SortBubble{
+    public static void main(String[] args) {
+        int[] a = new int[5];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = (int) (Math.random() * 100);
+        }
+        System.out.println("The original array is " + Arrays.toString(a));
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = 0; j < a.length - i - 1; j++) {
+                if (a[j] > a[j + 1]){
+                    int temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println("The sorted array is " + Arrays.toString(a));
+    }
+}
+
+//数组-练习--最大值
+class Biggest{
+    public static void main(String[] args) {
+        int[] a = new int[5];
+        for (int i = 0; i < a.length; i++) {
+        a[i] = (int) (Math.random() * 100);
+        }
+        System.out.println("The original array is " + Arrays.toString(a));
+        for (int :
+             ) {
+            
+        }
+    }
+}
