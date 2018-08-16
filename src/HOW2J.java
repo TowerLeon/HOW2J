@@ -692,3 +692,21 @@ class MeiJu{
 
 
 //接口与继承-练习-接口
+class Hero6{
+    String name;
+    int hp;
+    float armor;
+    int moveSpeed;
+    }
+interface Healer6{
+    public void heal();
+}
+class Support6 extends Hero6 implements Healer6 {
+    public void heal() {
+        System.out.println("The interface is implemented.");
+    }
+
+    public static void main(String[] args) {
+        Support6 ob = new Support6();
+    }
+}
