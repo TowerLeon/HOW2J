@@ -510,7 +510,7 @@ class TwoDimensionalArraySort{
     }
 }
 
-//数组-练习-护甲
+//类和对象-练习-护甲
 class ItemOne {
     String name;
     int price;
@@ -532,3 +532,119 @@ class HuJia{
         System.out.print("\n名称: "+ob2.name+" "+ "价格： "+ob2.price+" "+ "护甲等级： "+ob2.ac);
     }
 }
+
+//类和对象-练习-治疗,如果把Support1与UseSupport1合并则会容易很多
+class Hero1{
+    String name;
+    int hp;
+    float armor;
+    int moveSpeed;
+}
+class Support1 extends Hero1{
+    void heal(){}
+    void heal(Hero1 h){
+        h = new Hero1();
+        System.out.println("为指定的英雄加血：" + h.name);
+    }
+    void heal(Hero1 h,int hp){
+        h = new Hero1();
+        h.hp = hp;
+        System.out.println("为指定的英雄加血：" + h.hp);
+    }
+}
+class UseSupport1{
+    public static void main(String[] args) {
+        Hero1 ob1 = new Hero1();
+        Support1 ob2 = new Support1();
+        ob2.heal();
+        ob2.heal(ob1);
+        ob2.heal(ob1,30);
+    }
+}
+
+//correct answer
+class Hero2{
+    String name;
+    int hp;
+    float armor;
+    int moveSpeed;
+}
+class Support2 extends Hero2{
+    public void heal(){
+        System.out.println(name  + "为英雄加血");
+    }
+    public void heal(Hero2 h){
+        System.out.println(name + "为" + h.name +"加血");
+    }
+    public void heal(Hero2 h, int hp){
+        System.out.println(name + "为" + h.name + "加了" + hp +"的血");
+    }
+    public static void main(String[] args){
+        Support2 su = new Support2();
+        su.name = "蔡文姬";
+        su.hp = 1000;
+        Hero2 h = new Hero2();
+        h.name = "亚瑟";
+        su.heal();
+        su.heal(h);
+        su.heal(h,su.hp);
+    }
+}
+
+
+//类和对象-练习-构造方法
+class Hero3{
+    String name;
+    int hp;
+    float armor;
+    int moveSpeed;
+    void Hero2(String heroName,float heroHP,float heroArmor,int heroMoveSpeed){}
+}
+
+//类和对象-练习-构造方法(this)
+class Hero4 {
+    String name;
+    int hp;
+    float armor;
+    int moveSpeed;
+    public void hero4(String name,float hp){
+        this.name = name;
+        this.hp = (int) hp;
+    }
+}
+
+
+//类和对象-练习-传参
+//略
+
+//类和对象-练习-包
+//略
+
+//类和对象-练习-类属性
+//略
+
+//类和对象-练习-类方法
+//略
+
+//类和对象-练习-属性初始化
+class Hero5 {
+    public String name;
+    //= "some hero";
+
+    public void Hero5(){
+        name = "one hero";
+    }
+    {
+       // name = "the hero";
+    }
+
+}
+class try1{
+    public static void main(String[] args) {
+        Hero5 ob1 = new Hero5();
+        System.out.println(ob1.name);
+    }
+}
+
+//类和对象-练习-单例模式
+//懒汉与饿汉，略
