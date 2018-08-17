@@ -717,8 +717,50 @@ class Support6 extends Hero6 implements Healer6 {
 
 
 //接口与继承-练习-重写
+class Item7{
+    String name;
+    int price;
+    Item7(String name,int price){
+        this.name = name;
+        this.price = price;
+    }
+    void effect(){
+        System.out.println("no effect");
+    }
+}
+class MagicPotion extends Item7{
+    void effect(){
+        System.out.println("蓝瓶使用后，可以回魔法");
+    }
+
+    public static void main(String[] args) {
+        MagicPotion ob = new MagicPotion();
+        ob.effect();
+    }
+
+}
 
 
 
+
+class Item8 {
+    String name;
+    int price;
+    public void buy(){
+        System.out.println("购买");
+    }
+    public void effect(){
+        System.out.println("物品使用后，可以有效果");
+    }
+}
+class MagicPotion8 extends Item8 {
+    public void effect(){
+        System.out.println("物品使用后，可以有效果");
+    }
+/*public static void main(String[] args) {
+	MagicPotion h =new MagicPotion();
+	h.effect();
+}*/
+}
 
 //接口与继承-练习-多态
