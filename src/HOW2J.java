@@ -710,3 +710,15 @@ class Support6 extends Hero6 implements Healer6 {
         Support6 ob = new Support6();
     }
 }
+
+//接口与继承-练习-类型转换
+//略
+
+
+
+//接口与继承-练习-重写
+
+
+
+
+//接口与继承-练习-多态
