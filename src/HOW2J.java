@@ -702,6 +702,7 @@ interface Healer6{
     public void heal();
 }
 class Support6 extends Hero6 implements Healer6 {
+    @Override
     public void heal() {
         System.out.println("The interface is implemented.");
     }
@@ -739,3 +740,4 @@ class MagicPotion extends Item7{
 }
 
 //接口与继承-练习-多态
+
