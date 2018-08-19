@@ -9,6 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64cf5d89-501f-4859-8f7d-9d0c1fff0611" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/HOW2J.java" afterPath="$PROJECT_DIR$/src/HOW2J.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -77,8 +78,8 @@
       <file leaf-file-name="HOW2J.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HOW2J.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="743" column="0" lean-forward="true" selection-start-line="743" selection-start-column="0" selection-end-line="743" selection-end-column="0" />
+            <state relative-caret-position="214">
+              <caret line="789" column="3" lean-forward="false" selection-start-line="789" selection-start-column="3" selection-end-line="789" selection-end-column="3" />
               <folding>
                 <element signature="e#17531#17532#0" expanded="true" />
                 <element signature="e#17598#17599#0" expanded="true" />
@@ -161,9 +162,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,11 +178,19 @@
               <item name="HOW2J" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HOW2J" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="HOW2J" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Support6">
+  <component name="RunManager" selected="Application.GoTodie">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -217,9 +227,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToDie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="HelloWorld" />
+      <option name="MAIN_CLASS_NAME" value="GoToDie" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -231,9 +241,23 @@
       <module name="HOW2J" />
       <envs />
     </configuration>
-    <configuration name="Hero6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GoTodie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Hero6" />
+      <option name="MAIN_CLASS_NAME" value="GoTodie" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HOW2J" />
+      <envs />
+    </configuration>
+    <configuration name="Hero8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Hero8" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -248,20 +272,6 @@
     <configuration name="MagicPotion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="MagicPotion" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="HOW2J" />
-      <envs />
-    </configuration>
-    <configuration name="MagicPotion8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="MagicPotion8" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -368,18 +378,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Support6" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Hero6" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MagicPotion" />
-      <item index="3" class="java.lang.String" itemvalue="Application.HelloWorld" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MagicPotion8" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MagicPotion" />
+      <item index="2" class="java.lang.String" itemvalue="Application.GoToDie" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Hero8" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GoTodie" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Support6" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MagicPotion" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MagicPotion8" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HelloWorld" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Hero6" />
+        <item index="0" class="java.lang.String" itemvalue="Application.GoTodie" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Hero8" />
+        <item index="2" class="java.lang.String" itemvalue="Application.GoToDie" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Support6" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MagicPotion" />
       </list>
     </recent_temporary>
   </component>
@@ -418,11 +428,12 @@
       <workItem from="1534504419033" duration="3497000" />
       <workItem from="1534512630023" duration="2271000" />
       <workItem from="1534570500252" duration="3193000" />
+      <workItem from="1534599599080" duration="11051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97502000" />
+    <option name="totallyTimeSpent" value="108553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -430,7 +441,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248227" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32329637" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -470,6 +481,39 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../JavatoBeginnersGuide/src/java_beginners_guide_chapter6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JavatoBeginnersGuide/src/java_beginners_guide_chapter5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5688">
+          <caret line="316" column="13" lean-forward="false" selection-start-line="316" selection-start-column="13" selection-end-line="316" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HOW2J.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13374">
+          <caret line="743" column="0" lean-forward="true" selection-start-line="743" selection-start-column="0" selection-end-line="743" selection-end-column="0" />
+          <folding>
+            <element signature="e#17531#17532#0" expanded="true" />
+            <element signature="e#17598#17599#0" expanded="true" />
+            <element signature="e#17644#17645#0" expanded="true" />
+            <element signature="e#17688#17689#0" expanded="true" />
+            <element signature="e#17807#17808#0" expanded="true" />
+            <element signature="e#17854#17855#0" expanded="true" />
+            <element signature="e#17922#17923#0" expanded="true" />
+            <element signature="e#17971#17972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../JavatoBeginnersGuide/src/java_beginners_guide_chapter6.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -521,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HOW2J.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="743" column="0" lean-forward="true" selection-start-line="743" selection-start-column="0" selection-end-line="743" selection-end-column="0" />
+        <state relative-caret-position="214">
+          <caret line="789" column="3" lean-forward="false" selection-start-line="789" selection-start-column="3" selection-end-line="789" selection-end-column="3" />
           <folding>
             <element signature="e#17531#17532#0" expanded="true" />
             <element signature="e#17598#17599#0" expanded="true" />

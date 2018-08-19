@@ -739,5 +739,52 @@ class MagicPotion extends Item7{
 
 }
 
-//接口与继承-练习-多态
+//接口与继承-练习-多态,error
+//interface Mortal{
+//    public void die();
+//}
+//
+//class Hero8 implements Mortal{
+//    String name;
+//    String getName(String name){
+//        this.name = name;
+//    }
+//public void kill(Mortal m){
+//        m.die();
+//}
+//}
+//
+//class ADHero8 extends Hero8 implements Mortal{
+//    @Override
+//    public void die(){
+//        System.out.println("ADHero8.");
+//    }
+//}
+//class APHero8 extends Hero8 implements Mortal{
+//    @Override
+//    public void die(){
+//        System.out.println("APHero8.");
+//    }
+//}
+//class ADAPHero8 extends Hero8 implements Mortal{
+//    @Override
+//    public void die(){
+//        System.out.println("ADAPHero8.");
+//    }
+//}
+//class GoToDie{
+//    public static void main(String[] args) {
+//        Hero8 garen = new Hero8();
+//        ADHero8 AD = new ADHero8();
+//        APHero8 AP = new APHero8();
+//        ADAPHero8 ADAP = new ADAPHero8();
+//        System.out.println(garen.getName("garen"));
+//        garen.kill(AD);
+//        garen.kill(AP);
+//        garen.kill(ADAP);
+//
+//    }
+//}
 
+//接口与继承-练习-隐藏
+//略
