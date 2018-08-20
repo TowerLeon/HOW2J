@@ -34,6 +34,6 @@ package medium;
 //异常处理-练习-Throwable
 //略
 
-    
+
 class HOW2JMedium {
 }
